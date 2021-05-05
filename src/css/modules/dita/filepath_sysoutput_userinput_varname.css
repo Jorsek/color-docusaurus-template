@@ -1,0 +1,42 @@
+/* Style system output, varname, filepath, and userinput elements.
+Assert consistent styling of their children. */
+.systemoutput,
+.systemoutput *,
+.varname,
+.filepath,
+.userinput,
+.userinput * {
+  font-family: "DejaVu Sans Mono", Monaco, Consolas, "Andale Mono",  monospace !important; /* Removing the !important property causes some inconsistencies. */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  word-break: break-word;
+}
+
+/* Style userinput elements.
+Assert consistent styling of their children. */
+.userinput,
+.userinput * {
+  color: #000;
+}
+
+/* Style system output and file path elements.
+Assert consistent styling of their children. */
+.systemoutput,
+.filepath,
+.sysoutput *,
+.filepath * {
+  color: #000;
+}
+
+/* Inherit colors from parent elements. */
+.varname {
+  color: inherit;
+}
+/* Wrap varname elements in brackets. */
+.varname::before {
+  content: "<";
+}
+.varname::after {
+  content: ">";
+}

@@ -1,0 +1,133 @@
+/* Import icons/font. */
+@font-face {
+  font-family: icomoon;
+  src: url("https://jorsek.github.io/pdfgen.github.io/fonts/note_icons/fonts/icomoon.ttf") format("truetype");
+}
+/* Style any note type. */
+.note {
+  clear: both;
+  display: block; /* inline-block breaks notes in tables */
+  border-left: 5px solid #000;
+  color: #000;
+  font-style: normal;
+  background-color: #F4F4F4;
+  margin: 10px 0px 10px 0px;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Style note captions (the text and optional image preceding the note contents). */
+.note__title {
+  font-weight: bold;
+  font-style: normal;
+  text-transform: uppercase;
+  vertical-align: top;
+  display: inline-block;
+  letter-spacing: 0.025em;
+}
+
+/* Style the font containing icons preceding note captions. */
+.note__title::before {
+  display: inline-block;
+  font-family: icomoon;
+  font-size: 13px;
+  padding-right: 3.5px;
+}
+
+/* Style the note element contents with the @type="note", @type="", and @type="trouble" attributes assigned. */
+.note_note,
+.note_trouble {
+  border-color: #000;
+  background-color: #F4F4F4;
+}
+.note_note>.note__title,
+.note_trouble>.note__title {
+  color: #000;
+}
+.note_note > .note__title::before {
+  content: "\e906";
+}
+.note_trouble > .note__title::before {
+  content: "\e901";
+}
+
+/* Style the note element contents with the @type="tip" and @type="fastpath" attributes assigned. */
+.note_tip,
+.note_fastpath {
+  border-color: #000;
+  background-color: #F4F4F4;
+}
+.note_tip>.note__title,
+.note_fastpath>.note__title {
+  color: #000;
+}
+.note_tip > .note__title::before {
+  content: "\e908";
+}
+.note_fastpath > .note__title::before {
+  content: "\e905";
+}
+
+/* Style the note element contents with the @type="important", @type="remember", and @type="restriction" attributes assigned. */
+.note_important,
+.note_remember,
+.note_restriction {
+  border-color: #000;
+  background-color: #F4F4F4;
+}
+.note_important>.note__title, 
+.note_remember>.note__title, 
+.note_restriction>.note__title {
+  color: #000;
+}
+.note_important > .note__title::before {
+  content: "\e90a";
+}
+.note_remember > .note__title::before {
+  content: "\e907";
+}
+.note_restriction > .note__title::before {
+  content: "\e900";
+}
+
+/* Style the note element contents with the @type="attention" attributes assigned. */
+.note_attention,
+.note_caution,
+.note_warning,
+.note_danger {
+  border-color: #000;
+  background-color: #F4F4F4;
+}
+
+/* Style the note element contents with the @type="attention", @type="caution", @type="warning", and @type="danger" attributes assigned. */
+.note_attention>.note__title,
+.note_caution>.note__title,
+.note_warning>.note__title,
+.note_danger>.note__title {
+  color: #000;
+}
+.note_danger {
+  text-transform: uppercase;
+}
+.note_attention > .note__title::before {
+  content: "\e902";
+}
+.note_caution > .note__title::before {
+  content: "\e904";
+}
+.note_warning > .note__title::before {
+  content: "\e909";
+}
+.note_danger > .note__title::before {
+  content: "\e903";
+}
+
+/* Set consistent margins for notes in task topics. */
+.stepresult > .note,
+.info > .note,
+.stepxmp > .note,
+.example > .note,
+.result > .note,
+li.li:not(.step, .substep, .choice) > div.note {
+  margin: 5px 0px 5px 0px;
+}

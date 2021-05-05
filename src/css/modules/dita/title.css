@@ -1,0 +1,100 @@
+.markdown {
+    --ifm-h1-vertical-rhythm-top: 0;
+}
+
+/* Put every title in a separate line. */
+.title {
+  display: block;
+  clear: both;
+}
+
+/* Prevents all sorts of issues with titles that contains other tags. */
+.title * {
+  display: inline;
+}
+
+/* Style every title in a consistent way.
+Ensure that the titles children are styled in a consistent way. */
+.title,
+.title *,
+.table--title-label,
+.fig--title-label,
+figcaption:not(figcaption > .desc) {
+  font-family: "Roboto", Helvetica, Arial;
+  color: #000;
+  border: none;
+  text-align: left;
+  font-style: normal;
+  font-weight: bold;
+  word-wrap: break-word;
+  line-height: 1.2em;
+  background-color: transparent;
+  padding: 0px;
+  margin: 25px 0px 0px 0px;
+}
+
+/* Remove margins for image and table titles. */
+.table--title-label,
+.fig--title-label,
+figcaption:not(figcaption > .desc) {
+  margin: 0px;
+}
+
+/* Increase letter spacing for titles. */
+.title,
+.table--title-label,
+.fig--title-label,
+.table > caption > .title {
+  letter-spacing: 0.025em;
+}
+
+/* Style topics nested on different levels. */
+h1,
+h1 * {
+  margin: 0px;
+  padding: 0px;
+  font-size: 42px;
+
+}
+
+h2,
+h2 * {
+  font-size: 32px;
+}
+
+h3,
+h3 * {
+  font-size: 28px;
+}
+
+h4,
+h4 *,
+h5,
+h5 *,
+h6,
+h6 * {
+  font-size: 24px;
+}
+
+/* Style table titles. */
+.table--title-label,
+.table--title-label *,
+.table > caption > .title,
+.table > caption > .title * {
+  font-size: 16px;
+  background-color: transparent;
+}
+
+/* Fix the table title and table numbering position. */
+.table > caption > .title,
+.table--title-label {
+  display: inline-block;
+  margin: 0px;
+  padding: 10px 0px 0px 0px;
+}
+
+/* Fix titles placement. */
+.topic > .title,
+.sectiontitle {
+  margin-left: -0.05em;
+}

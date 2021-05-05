@@ -1,0 +1,14 @@
+/* Hide empty elements. */
+div.markdown .prereq:empty,
+div.markdown .postreq:empty,
+div.markdown .steps:empty,
+div.markdown .steps-unordered:empty,
+div.markdown .stepsection:empty,
+div.markdown .cause:empty,
+div.markdown .condition:empty,
+div.markdown .context:empty,
+div.markdown .result:empty,
+div.markdown .example:empty,
+div.markdown .info:empty {
+  display: none;
+}

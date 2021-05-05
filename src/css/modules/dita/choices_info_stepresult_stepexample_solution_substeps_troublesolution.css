@@ -1,0 +1,83 @@
+/* Requires: ordered_list_unordered_list_step_substep_choice.css */
+
+/* Uniformly style step element children.
+Style trouble solution elements. */
+.stepresult,
+.info,
+.stepxmp,
+.troubleSolution,
+.choices,
+.substeps {
+  font-style: normal;
+  font-weight: normal;
+  border-left: 2px dotted #000;
+  margin: 2.5px 0px 5px 1px;
+  padding: 0px 0px 0.5px 10px;
+}
+
+/* Style trouble solution element. Add a margin between trouble solution elements.
+Span the left border across the cause and remedy elements. */
+.troubleSolution {
+  margin: 0px 0px 25px 0px;
+  border-left: 5px solid #000;
+}
+
+/* Style the step element children captions. */
+.stepresult::before,
+.info::before,
+.stepxmp::before {
+  font-weight: bold;
+  font-style: normal;
+  letter-spacing: 0.025em;
+  color: #000;
+}
+
+/* Add a caption before info elements. 
+.info::before {
+  content: "Info: ";
+}
+*/
+
+/* Add a caption before step example and example elements. */
+.stepxmp::before {
+  content: "Example: ";
+}
+
+/* Add a caption before stepresult and result elements. */
+.stepresult::before{
+  content: "Result: ";
+}
+
+/* Fix the dotted border transition between elements. */
+.choices ~ .stepresult,
+.choices ~ .stepxmp,
+.info ~ .stepxmp,
+.info ~ .stepresult,
+.info ~ .substeps,
+.info ~ .info,
+.substeps ~ .info,
+.substeps ~ .stepresult,
+.choices ~ .stepresult,
+.substeps ~ .substeps {
+  margin-top: -3px;
+  padding-top: 3px;
+}
+.cmd ~ .info,
+.cmd ~ .stepresult,
+.cmd ~ .stepxmp,
+.cmd ~ .choices,
+.cmd ~ .substeps {
+    margin-top: -3.5px;
+    padding-top: 4px;
+}
+
+/* Remove the left border for steps in single-step procedures. */
+.taskbody > div.step > .cmd,
+.taskbody > div.step > .info,
+.taskbody > div.step > .stepresult,
+.taskbody > div.step > .stepxmp,
+.taskbody > div.step > .troubleSolution,
+.taskbody > div.step > .choices,
+.taskbody > div.step > .substeps {
+  border-left: none;
+}

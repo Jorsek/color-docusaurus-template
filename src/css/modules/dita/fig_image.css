@@ -1,0 +1,89 @@
+/* Position figure elements. */
+.fig,
+.image {
+  overflow: auto;
+  padding: 0px;
+  margin: 10px 0px 10px 0px;
+}
+
+/* Prevent large images from overflowing. */
+img {
+  max-width: 100%;
+}
+
+/* Set smaller margins for figures and images in task topics. */
+.stepresult > figure,
+.stepresult > image,
+.info > figure,
+.info > image,
+.stepxmp > figure,
+.stepxmp > image,
+.example > figure,
+.example > image,
+.result > figure,
+.result > image {
+  margin: 5px 0px 5px 0px;
+}
+
+/* Remove margins for image elements in figure elements without titles or other elements. */
+.fig > .image:only-child {
+  margin: 0px;
+}
+
+/* Style images in commands. */
+.cmd > .image,
+.cmd  img {
+  display: inline-block;
+  max-height: 16px;
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/* Position images and figure titles horizontally. */
+.imageleft,
+.fig:has(.imageleft) * {
+    text-align: left;
+    float: left;
+}
+.imageright,
+.fig:has(.imageright) * {
+    text-align: right;
+    float: right;
+}
+.imagecenter,
+.fig:has(.imagecenter) * {
+    text-align: center;
+    float: center;
+}
+
+/* Remove additional spacing before and after image elements with the @placement="break" attribute assigned. */
+br {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* Disable margins, borders, and shadows for inline images. */
+.image.imageinline,
+.body img.imageinline,
+.image.inline {
+    margin: 0;
+    box-shadow: none;
+    border: none;
+}
+
+/* Add image borders to image elements. */
+.image,
+.body img {
+    border: 5px solid #000;
+}
+
+/* Disable image borders by assigning the @outputclass="no_borders" attribute to the image element. */
+.image.no_borders,
+.body img.no_borders {
+    border: none;
+}

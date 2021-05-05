@@ -1,0 +1,17 @@
+/* Style cite elements. */
+.cite {
+  color: #000;
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* Style long quote elements. */
+blockquote {
+  font-size: 14px;
+  border-left: 5px solid #000;
+  margin: 10px 0px 10px 0px;
+  padding-left: 10px;
+}
+blockquote * {
+  font-size: 14px;
+}

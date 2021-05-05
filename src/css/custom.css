@@ -5,46 +5,29 @@
  * work well for content-centric websites.
  */
 
-@import "modules/code.css";
-@import "modules/table.css";
-@import "modules/right_toc.css";
-@import "modules/content_area.css";
-@import "modules/colors.css";
-@import "modules/navbar.css";
+/* Text */
+@import "modules/text/typography.css";
+@import "modules/text/formatting.css";
 
-/* STYLING ****************************************************************/
-@import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/styling/typography.css");
-@import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/styling/image_borders.css");
-@import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/styling/hide_empty_elements.css");
-@import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/styling/formatting.css");
+/* DITA */
+@import "modules/dita/hide_empty_elements.css";
+@import "modules/dita/cite_long_quote_quote.css";
+@import "modules/dita/codeblock_codeph_pre.css";
+@import "modules/dita/definition_list.css";
+@import "modules/dita/filepath_sysoutput_userinput_varname.css";
+@import "modules/dita/fig_image.css";
+@import "modules/dita/note.css"; /* overwrite admonitions */
+@import "modules/dita/paragraph.css";
+@import "modules/dita/table.css"; /* needs some work */
+@import "modules/dita/title.css";
+@import "modules/dita/uicontrol_wintitle_shortcut_menucascade.css";
+@import "modules/dita/xref_related_links.css";
+@import "modules/dita/ordered_list_unordered_list_step_substep_choice.css";
+@import "modules/dita/cause_condition_context_example_postreq_prereq_remedy_result_steps_stepsection.css";
+@import "modules/dita/choices_info_stepresult_stepexample_solution_substeps_troublesolution.css";
+@import "modules/dita/choices_steps_substeps_numbering.css";
 
-/* DITA *******************************************************************/
-@import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/dita/paragraph.css");
-@import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/dita/filepath_sysoutput_userinput_varname.css"); 
-@import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/dita/uicontrol_wintitle_shortcut_menucascade.css");
-@import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/dita/abstract_shortdesc.css");
-@import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/dita/note.css");
-@import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/dita/xref_related_links.css");
-@import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/dita/codeblock_codeph.css");
-@import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/dita/figure_image.css"); 
-@import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/dita/definition_list.css");
-@import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/dita/cite_long_quote_quote.css");
-@import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/dita/title.css");
-@import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/dita/section.css");
-@import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/dita/ordered_list_unordered_list_step_substep_choice.css");
-@import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/dita/cause_condition_context_example_postreq_prereq_remedy_result_steps_stepsection.css");
-@import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/dita/choices_info_stepresult_stepexample_solution_substeps_troublesolution.css");
-@import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/dita/choices_steps_substeps_numbering.css");
-
-/* Palette ******************************************************************/
-@import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/palette/color.css");
-
-/* ID-31 */
-.cmd ~ .info,
-.cmd ~ .stepresult,
-.cmd ~ .stepxmp,
-.cmd ~ .choices,
-.cmd ~ .substeps {
-    margin-top: -3.5px;
-    padding-top: 4px;
-}
+/* Docusaurus */
+@import "modules/docusaurus/right_toc.css";
+@import "modules/docusaurus/navbar.css";
+@import "modules/docusaurus/colors.css";

@@ -1,0 +1,539 @@
+/*** LIGHT ***/
+
+/* Primary, left TOC inactive links */
+:root {
+  --ifm-color-primary: #457b9d; 
+}
+
+/* Navbar */
+:root #__docusaurus > nav.navbar,
+:root #__docusaurus > nav.navbar .navbar__title {
+  background-color: #1d3557;
+  color: #f4f4f4;
+}
+
+/* Left TOC */
+:root[data-theme='light'] #__docusaurus > div.main-wrapper div.menu {
+  background-color: #f4f4f4;
+}
+
+/* Left TOC - Collapse button */
+:root[data-theme='light'] #__docusaurus > div.main-wrapper button {
+  background: #dcdcdc;
+  border-color: #dcdcdc;
+  color: #606770;
+}
+:root[data-theme='light'] #__docusaurus > div.main-wrapper button:hover {
+  background: #f4f4f4;
+  border-color: #f4f4f4;
+  color: #545454;
+}
+:root[data-theme='light'] #__docusaurus > div.main-wrapper button.button--sm:hover {
+  border-color: #545454;
+}
+
+/* Notes */
+:root[data-theme='light'] {
+  --ifm-color-secondary: rgb(240,239,242); /* Note note and footer inks */
+  --ifm-color-success: #1979e4; /* Tip note */
+  --ifm-color-info: #00c661; /* Important note */
+  --ifm-color-warning: #deb100; /* Warning note */
+  --ifm-color-danger: #df0035; /* Danger note */
+}
+/* Note override */
+html[data-theme='light'] div.admonition.admonition-note.alert.alert--secondary {
+  background: #112e4f;
+  color: #ffffff;
+  border: none;
+}
+/*
+html[data-theme='light'] div.admonition.admonition-note.alert.alert--secondary > div.admonition-heading > h5 > span {
+  filter: invert(100%);
+}*/
+
+/* Blockquotes */
+:root[data-theme='light'] blockquote {
+  color: #606770;
+}
+
+/* Left TOC */
+/* Left TOC - Collapse button */
+:root[data-theme='dark'] #__docusaurus > div.main-wrapper button {
+  background: #242526;
+  border: none;
+  border-right: var(--ifm-button-border-width) solid #606770;
+}
+:root[data-theme='dark'] #__docusaurus > div.main-wrapper button:hover {
+  background: #606770;
+  border: none;
+  border-right: var(--ifm-button-border-width) solid #606770;
+}
+
+/* Hovered collapse button */
+:root[data-theme='dark'] #__docusaurus > div.main-wrapper button.button--sm {
+  border: var(--ifm-button-border-width) solid #606770;
+  color: rgb(240,239,242);
+}
+:root[data-theme='dark'] #__docusaurus > div.main-wrapper button.button--sm:hover {
+  border: var(--ifm-button-border-width) solid #606770;
+  color: rgb(240,239,242);
+}
+
+/* Notes */
+:root[data-theme='dark'] {
+  --ifm-color-secondary: rgb(240,239,242); /* Note note and footerl inks */
+  --ifm-color-success: #1979e4; /* Tip note */
+  --ifm-color-info: #00c661; /* Important note */
+  --ifm-color-warning: #deb100; /* Warning note */
+  --ifm-color-danger: #df0035; /* Danger note */
+}
+
+/* Note override */
+html[data-theme='dark'] div.admonition.admonition-note.alert.alert--secondary {
+  background: #112e4f;
+  color: #f5f6f7;
+  border: none;
+}
+html[data-theme='dark'] div.admonition.admonition-tip.alert.alert--success,
+html[data-theme='dark'] div.admonition.admonition-important.alert.alert--info,
+html[data-theme='dark'] div.admonition.admonition-caution.alert.alert--warning,
+html[data-theme='dark'] div.admonition.admonition-warning.alert.alert--danger {
+  color: #f5f6f7;
+  border: none;
+}
+
+html[data-theme='dark'] div.admonition.admonition-note.alert.alert--secondary > div.admonition-heading > h5 > span,
+html[data-theme='dark'] div.admonition.admonition-tip.alert.alert--success > div.admonition-heading > h5 > span,
+html[data-theme='dark'] div.admonition.admonition-important.alert.alert--info > div.admonition-heading > h5 > span,
+html[data-theme='dark'] div.admonition.admonition-caution.alert.alert--warning > div.admonition-heading > h5 > span,
+html[data-theme='dark'] div.admonition.admonition-warning.alert.alert--danger > div.admonition-heading > h5 > span {
+  filter: invert(100%);
+}
+
+:root[data-theme='dark'] blockquote {
+  color: #dadde1;
+}
+
+/* Fix issues with colors of note children */
+div.admonition,
+div.admonition * {
+  color: #f5f6f7;
+}
+
+/* Fix issues with background colors */
+div.admonition code {
+  color: #f5f6f7;
+  background-color: rgb(72, 77, 91);
+}
+
+
+/*=====================================================================
+                                LAYOUT 
+======================================================================*/
+
+/* cover.css */
+.cover-page-container {
+  background-color: #457b9d;
+}
+.title-text {
+  color: #fff;
+}
+.bottom-stripe {
+  background-color: #fff;
+}
+
+/* fullpage_title.css */
+@page fullpage_title {
+  background-color: #457b9d;
+}
+.title.fullpage_title {
+  border-color: #fff;
+  color: #fff;
+}
+.fullpage_title + .shortdesc,
+.fullpage_title + .shortdesc *,
+.fullpage_title + .abstract,
+.fullpage_title + .abstract * {
+  color: #fff;
+}
+
+/* faq_topic.css */
+article.topic.faq {
+  border-color: #457b9d;
+}
+
+/*=====================================================================
+                                STYLING 
+======================================================================*/
+
+/* header_footer.css and header_footer_alternate.css =================*/
+@page toc:left {
+  @top-left {
+    color: #457b9d;
+    background-color: transparent;
+  }
+  @top-right {
+    color: #457b9d;
+    background-color: transparent;
+  }
+  @bottom-left {
+    color: #fff;
+    background-color: #457b9d;
+  }
+  @bottom-right {
+    color: #fff;
+    background-color: #457b9d;
+  }
+}
+@page toc:right {
+  @top-left {
+    color: #457b9d;
+    background-color: transparent;
+  }
+  @top-right {
+    color: #457b9d;
+    background-color: transparent;
+  }
+  @bottom-left {
+    color: #fff;
+    background-color: #457b9d;
+  }
+  @bottom-right {
+    color: #fff;
+    background-color: #457b9d;
+  }
+}
+@page:left{
+  @top-left {
+    color: #457b9d;
+    background-color: transparent;
+  }
+  @top-right {
+    color: #457b9d;
+    background-color: transparent;
+  }
+  @bottom-left {
+    color: #fff;
+    background-color: #457b9d;
+  }
+  @bottom-right {
+    color: #fff;
+    background-color: #457b9d;
+  }
+}
+@page:right{
+  @top-left {
+    color: #457b9d;
+    background-color: transparent;
+  }
+  @top-right {
+    color: #457b9d;
+    background-color: transparent;
+  }
+  @bottom-left {
+    color: #fff;
+    background-color: #457b9d;
+  }
+  @bottom-right {
+    color: #fff;
+    background-color: #457b9d;
+  }
+}
+
+/* image_borders.css ===================================================*/
+.image,
+.body img {
+  border-color: #f4f4f4;
+}
+
+/* link_page_number.css ===================================================*/
+article a[href]::after {
+  color: #404040;
+}
+
+/* table_of_contents.css ===============================================*/
+nav > ul:first-child::before {
+  color: #1d3557;
+}
+nav * {
+  color: #404040;
+}
+nav > ul:has(ul) > li > a {
+  color: #1d3557;
+}
+nav > ul:has(ul) > li,
+nav > ul:has(ul) > li:before {
+  color: #1d3557;
+}
+nav > ul:has(ul) > li > a::after {
+  color: #1d3557;
+}
+nav > ul > li > a,
+nav > ul > li:before {
+  color: #404040;
+}
+
+/*** typography.css ==================================================*/
+body,
+article,
+.body * {
+  color: #404040;
+}
+
+/*=====================================================================
+                                DITA 
+======================================================================*/
+
+/* cause_condition_context_example_postreq_prereq_remedy_result_steps_stepsection.css */
+.prereq::before,
+.postreq::before,
+.steps::before,
+.steps-unordered::before,
+.stepsection,
+.cause::before,
+.remedy::before,
+.condition::before,
+.context::before,
+.result::before,
+.example::before {
+  color: #1d3557;
+}
+.cause > .title,
+.remedy > .title {
+  color: #404040;
+}
+.cause > .title::after,
+.remedy > .title::after {
+  color: #404040;
+}
+.stepsection > .ph,
+.stepsection > .ph *,
+.stepsection > .uicontrol,
+.stepsection > .wintitle,
+.stepsection > .codeph,
+.stepsection > .b,
+.stepsection > .i,
+.stepsection > .u,
+.stepsection > .term {
+  color: inherit;
+  background-color: transparent;
+}
+
+/* choices_info_stepresult_stepexample_solution_substeps_troublesolution.css */
+.stepresult,
+.info,
+.stepxmp,
+.troubleSolution,
+.choices,
+.substeps,
+.troubleSolution {
+  border-color: #dcdcdc;
+}
+.stepresult::before,
+.info::before,
+.stepxmp::before {
+  color: #404040;
+}
+
+/* choices_steps_substeps_numbering.css ==============================*/
+li.step::before,
+li.substep::before,
+li.choice::before {
+  background-color: #dcdcdc;
+  color: #404040;
+}
+.stepresult,
+.info,
+.stepxmp,
+.choices,
+.substeps {
+  border-color: #dcdcdc;
+}
+.cmd {
+  border-color: #dcdcdc;
+}
+
+/* choicetable_table.css =============================================*/
+table {
+  border-color: #1d3557 !important; /* Needed for SSG */
+}
+tr,
+th,
+th * {
+  color: #fff !important; /* Needed for both SSG and PDF Gen */
+  background-color: #1d3557;
+}
+th,
+th *,
+th > .fn::footnote-call {
+  color: #fff;
+  background-color: #1d3557;
+}
+tr:nth-child(odd) > td {
+  background-color: #fff;
+}
+tr > td {
+  background-color: #F4F4F4;
+}
+
+
+/* cite_long_quote_quote.css =========================================*/
+.cite {
+  color: #1d3557;
+}
+.lq {
+  border-color: #dcdcdc;
+}
+
+/* codeblock_codeph.css ==============================================*/
+code {
+  color: #404040;
+  background-color: #f4f4f4;
+}
+.codeblock > code {
+  border-color: #dcdcdc;
+}
+
+/* definition_list.css ===============================================*/
+.dt,
+.dd {
+  border-color: #dcdcdc;
+}
+.dt,
+.dt * {
+  color: #1d3557 !important; /* Needed for both SSG and PDF Gen */
+}
+
+/* filepath_sysoutput_userinput_varname.css ==========================*/
+.userinput,
+.userinput * {
+  color: #457b9d;
+}
+.systemoutput,
+.filepath,
+.sysoutput *,
+.filepath * {
+  color: #d95700;
+}
+
+/* footnote.css =======================================================*/
+@page {
+  counter-reset: footnote;
+  @footnotes {
+    border-color: #dcdcdc;
+  }
+}
+.fn,
+.fn * {
+  color: #404040;
+}
+.fn::footnote-call {
+  color: #1d3557;
+}
+div.fn {
+  border-top: 1px solid #dcdcdc;
+}
+
+/* xref_related_links.css ============================================*/
+.xref,
+.link {
+  color: #457b9d;
+}
+.related-links::before{
+  color: #1d3557;
+}
+
+/* note.css ==========================================================*/
+.note {
+  border-color: #404040;
+  background-color: #dcdcdc;
+  color: #404040;
+}
+.note_note,
+.note_trouble {
+  border-color: #457b9d;
+  background-color: #29b4d328;
+}
+.note_note > .note__title,
+.note_trouble > .note__title {
+  color: #457b9d;
+}
+.note_tip,
+.note_fastpath {
+  border-color: #3f6c51;
+  background-color: #3f6c512c;
+}
+.note_tip > .note__title,
+.note_fastpath > .note__title {
+  color: #3f6c51;
+}
+.note_important,
+.note_remember,
+.note_restriction {
+  border-color: #ffa600;
+  background-color: #ffc25131;
+}
+.note_important > .note__title,
+.note_remember > .note__title,
+.note_restriction > .note__title {
+  color: #ffa600;
+}
+.note_attention,
+.note_caution,
+.note_warning,
+.note_danger {
+  border-color: #d95700;
+  background-color: #d9570027;
+}
+.note_attention > .note__title,
+.note_caution > .note__title,
+.note_warning > .note__title,
+.note_danger > .note__title {
+  color: #d95700;
+}
+
+/* title.css =========================================================*/
+.title,
+.title *,
+.table--title-label,
+.fig--title-label,
+figcaption:not(figcaption > .desc) {
+  color: #1d3557;
+}
+
+/* title-site.css ====================================================*/
+h1,
+h1 *,
+h2,
+h2 *,
+h3,
+h3 *,
+h4,
+h4 *,
+h5,
+h5 *,
+h6,
+h6 *,
+figcaption,
+.fig--title-label,
+span.table--title-label,
+span.title,
+.table--title-label,
+.table--title-label *,
+.table > caption > .title,
+.table > caption > .title *,
+.table > caption > .title,
+.table--title-label {
+  color: #1d3557;
+}
+
+/* uicontrol_wintitle_shortcut_menucascade.css =======================*/
+.uicontrol {
+  color: #457b9d;
+}
+.shortcut {
+  color: #457b9d;
+}
+abbr[title] {
+  color: #457b9d;
+}

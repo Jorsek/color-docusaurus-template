@@ -1,0 +1,49 @@
+/* The important properties are needed to ensure consistent formating of children elements. */
+
+/* Justify text in the elements with the @outputclass="justify" attribute assigned. */
+.text_justify,
+.text_justify * {
+  text-align: justify !important;
+}
+
+/* Align text to the left in the elements with the @outputclass="left" attribute assigned. */
+.text_left,
+.text_left * {
+  text-align: left !important;
+}
+
+/* Align text to the right in the elements with the @outputclass="right" attribute assigned. */
+.text_right,
+.text_right * {
+  text-align: right !important;
+}
+
+/* Make text small in the elements with the @outputclass="text_smaller" attribute assigned. */
+.text_smaller,
+.text_smaller * {
+  font-size: 12px !important;
+}
+
+/* Make text small in the elements with the @outputclass="text_small" attribute assigned. */
+.text_small,
+.text_small * {
+  font-size: 14px !important;
+}
+
+/* Make text regularly sized in the elements with the @outputclass="text_normal" attribute assigned. */
+.text_default,
+.text_default * {
+  font-size: 16px !important;
+}
+
+/* Make text large in the elements with the @outputclass="text_large" attribute assigned. */
+.text_large,
+.text_large * {
+  font-size: 18px !important;
+}
+
+/* Make text large in the elements with the @outputclass="text_larger" attribute assigned. */
+.text_larger,
+.text_larger * {
+  font-size: 20px !important;
+}
