@@ -1,0 +1,3 @@
+#__docusaurus > nav.navbar.navbar--fixed-top > div.navbar__inner > div:nth-child(1) > a > img {
+  display: none;
+}
