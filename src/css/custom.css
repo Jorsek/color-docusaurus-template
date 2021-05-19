@@ -6,28 +6,30 @@
  */
 
 /* Text */
-@import "modules/text/typography.css";
-@import "modules/text/formatting.css";
+@import "text/typography.css";
+@import "text/formatting.css";
 
 /* DITA */
-@import "modules/dita/hide_empty_elements.css";
-@import "modules/dita/cite_long_quote_quote.css";
-@import "modules/dita/codeblock_codeph_pre.css";
-@import "modules/dita/definition_list.css";
-@import "modules/dita/filepath_sysoutput_userinput_varname.css";
-@import "modules/dita/fig_image.css";
-@import "modules/dita/note.css"; /* overwrite admonitions */
-@import "modules/dita/paragraph.css";
-@import "modules/dita/table.css"; /* needs some work */
-@import "modules/dita/title.css";
-@import "modules/dita/uicontrol_wintitle_shortcut_menucascade.css";
-@import "modules/dita/xref_related_links.css";
-@import "modules/dita/ordered_list_unordered_list_step_substep_choice.css";
-@import "modules/dita/cause_condition_context_example_postreq_prereq_remedy_result_steps_stepsection.css";
-@import "modules/dita/choices_info_stepresult_stepexample_solution_substeps_troublesolution.css";
-@import "modules/dita/choices_steps_substeps_numbering.css";
+@import "dita/hide_empty_elements.css";
+@import "dita/cite_long_quote_quote.css";
+@import "dita/codeblock_codeph_pre.css";
+@import "dita/definition_list.css";
+@import "dita/filepath_sysoutput_userinput_varname.css";
+@import "dita/fig_image.css";
+@import "dita/note.css"; /* overwrite admonitions */
+@import "dita/paragraph.css";
+@import "dita/table.css"; /* needs some work */
+@import "dita/title.css";
+@import "dita/uicontrol_wintitle_shortcut_menucascade.css";
+@import "dita/xref_related_links.css";
+@import "dita/ordered_list_unordered_list_step_substep_choice.css";
+@import "dita/cause_condition_context_example_postreq_prereq_remedy_result_steps_stepsection.css";
+@import "dita/choices_info_stepresult_stepexample_solution_substeps_troublesolution.css";
+@import "dita/choices_steps_substeps_numbering.css";
 
 /* Docusaurus */
-@import "modules/docusaurus/right_toc.css";
-@import "modules/docusaurus/navbar.css";
-@import "modules/docusaurus/colors.css";
+@import "docusaurus/right_toc.css";
+@import "docusaurus/navbar.css";
+
+@import "docusaurus/colors.css";
+
