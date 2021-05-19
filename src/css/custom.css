@@ -36,9 +36,6 @@
 @import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/dita/choices_steps_substeps_numbering.css");
 @import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/dita/choicetable_table.css");
 
-/* PALETTE ===========================================================================*/
-@import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/palette/color.css");
-
 /* Docusaurus */
 @import "docusaurus/right_toc.css";
 @import "docusaurus/navbar.css";
