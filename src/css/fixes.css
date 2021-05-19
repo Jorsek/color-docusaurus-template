@@ -1,0 +1,83 @@
+/* Remove navbar title on the right of the logo */
+strong.navbar__title {
+  display: none; /* uncomment once deployed to eD */
+  color: rgb(240,239,242);
+}
+
+/* Spacing between the top bar and heading fix */
+.markdown {
+  --ifm-h1-vertical-rhythm-top: 0; 
+}
+
+/* Hide empty elements. */
+div.markdown .prereq:empty,
+div.markdown .postreq:empty,
+div.markdown .steps:empty,
+div.markdown .steps-unordered:empty,
+div.markdown .stepsection:empty,
+div.markdown .cause:empty,
+div.markdown .condition:empty,
+div.markdown .context:empty,
+div.markdown .result:empty,
+div.markdown .example:empty,
+div.markdown .info:empty {
+  display: none;
+}
+
+/* Level2 lists should be lower-alpha */
+ol > li > ol {
+  list-style-type: lower-alpha;
+}
+
+/* Fix paragraphs placement in list items */
+.markdown li > p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* Hide menucascade symbols */
+abbr[title] {
+  display: none;
+  }
+  /* Apply custom menucascade symbols */
+  abbr + span.uicontrol::before {
+    /*content: " ⇨ ";*/
+    content: " → ";
+    display: inline;
+  }
+
+/* Fix the dotted border transition between elements. */
+.choices ~ .stepresult,
+.choices ~ .stepxmp,
+.info ~ .stepxmp,
+.info ~ .stepresult,
+.info ~ .substeps,
+.info ~ .info,
+.substeps ~ .info,
+.substeps ~ .stepresult,
+.choices ~ .stepresult,
+.substeps ~ .substeps {
+  margin-top: -3px;
+  padding-top: 3px;
+}
+.cmd ~ .info,
+.cmd ~ .stepresult,
+.cmd ~ .stepxmp,
+.cmd ~ .choices,
+.cmd ~ .substeps {
+  margin-top: -3.5px;
+  padding-top: 4px;
+}
+
+/* Fix issues with colors of note children */
+div.note,
+div.note * {
+  color: #f5f6f7;
+}
+
+/* Fix issues with background colors */
+div.note code.ph.codeph,
+div.note div.pre.codeblock {
+  color: #f5f6f7;
+  background-color: rgb(72, 77, 91);
+}
