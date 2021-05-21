@@ -205,7 +205,7 @@ code {
 }
 .dt,
 .dt * {
-  color: var(--color-primary-light);
+  color: var(--color-primary-dark);
 }
 
 /* filepath_sysoutput_userinput_varname.css ==========================*/
@@ -322,7 +322,7 @@ span.title,
 }
 
 /* uicontrol_wintitle_shortcut_menucascade.css =======================*/
-.uicontrol {
+span.uicontrol {
   color: var(--color-primary-light);
 }
 .shortcut {

@@ -1,6 +1,5 @@
 /* Remove navbar title on the right of the logo */
 strong.navbar__title {
-  display: none; /* uncomment once deployed to eD */
   color: rgb(240,239,242);
 }
 
@@ -67,24 +66,6 @@ abbr[title] {
 .cmd ~ .substeps {
   margin-top: -3.5px;
   padding-top: 4px;
-}
-
-/* Fix issues with colors of note children */
-div.note,
-div.note * {
-  color: #f5f6f7;
-}
-
-/* Fix issues with background colors */
-div.note code.ph.codeph,
-div.note div.pre.codeblock {
-  color: #f5f6f7;
-  background-color: rgb(72, 77, 91);
-}
-
-table {
-  width: 100% !important;
-  display: block;
 }
 
 .linklist strong {

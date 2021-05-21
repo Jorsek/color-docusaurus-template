@@ -35,5 +35,9 @@
 /* Docusaurus */
 @import "fixes.css";
 @import "docusaurus/right_toc.css";
-@import "docusaurus/navbar.css";
 @import "docusaurus/colors.css";
+
+/* DELETE ONCE THE LOGO IS IMPLEMENTED */
+#__docusaurus > nav.navbar.navbar--fixed-top > div.navbar__inner > div:nth-child(1) > a > img {
+  display: none;
+}
