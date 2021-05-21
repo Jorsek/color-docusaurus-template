@@ -3,7 +3,7 @@
 /* Primary, left TOC inactive links */
 :root {
   --ifm-color-primary: #457b9d;
-  --color-primary-dark: #1d3557;
+  --color-accent: #1d3557;
   
   --ifm-color-primary-light: #f4f4f4;;
   --ifm-color-primary-lighter: #dcdcdc;
@@ -11,10 +11,20 @@
   --ifm-color-primary-darkest: #404040;
 }
 
+:root[data-theme='dark'] {
+  --ifm-color-primary: #457b9d;
+  --color-accent: #1d3557;
+  
+  --ifm-color-primary-light: #f4f4f4;;
+  --ifm-color-primary-darkest: #dcdcdc;
+  
+  --ifm-color-primary-lighter: #404040;
+}
+
 /* Navbar */
 :root #__docusaurus > nav.navbar,
 :root #__docusaurus > nav.navbar .navbar__title {
-  background-color: var(--color-primary-dark);
+  background-color: var(--color-accent);
   color: var(--ifm-color-primary-light);
 }
 
@@ -87,20 +97,20 @@ article a[href]::after {
 
 /* table_of_contents.css ===============================================*/
 nav > ul:first-child::before {
-  color: var(--color-primary-dark);
+  color: var(--color-accent);
 }
 nav * {
   color: var(--ifm-color-primary-darkest);
 }
 nav > ul:has(ul) > li > a {
-  color: var(--color-primary-dark);
+  color: var(--color-accent);
 }
 nav > ul:has(ul) > li,
 nav > ul:has(ul) > li:before {
-  color: var(--color-primary-dark);
+  color: var(--color-accent);
 }
 nav > ul:has(ul) > li > a::after {
-  color: var(--color-primary-dark);
+  color: var(--color-accent);
 }
 nav > ul > li > a,
 nav > ul > li:before {
@@ -108,8 +118,8 @@ nav > ul > li:before {
 }
 
 /*** typography.css ==================================================*/
-main,
-main * {
+div.markdown,
+div.markdown * {
   color: var(--ifm-color-primary-darkest);
 }
 
@@ -129,7 +139,7 @@ main * {
 .context::before,
 .result::before,
 .example::before {
-  color: var(--color-primary-dark);
+  color: var(--ifm-color-primary);
 }
 .cause > .title,
 .remedy > .title {
@@ -188,19 +198,19 @@ li.choice::before {
 
 /* choicetable_table.css =============================================*/
 table {
-  border-color: var(--color-primary-dark) !important; /* Needed for SSG */
+  border-color: var(--color-accent) !important; /* Needed for SSG */
 }
 tr,
 th,
 th * {
   color: #fff !important; /* Needed for both SSG and PDF Gen */
-  background-color: var(--color-primary-dark);
+  background-color: var(--color-accent);
 }
 th,
 th *,
 th > .fn::footnote-call {
   color: #fff;
-  background-color: var(--color-primary-dark);
+  background-color: var(--color-accent);
 }
 tr:nth-child(odd) > td {
   background-color: #fff;
@@ -212,7 +222,7 @@ tr > td {
 
 /* cite_long_quote_quote.css =========================================*/
 .cite {
-  color: var(--color-primary-dark);
+  color: var(--color-accent);
 }
 .lq {
   border-color: var(--ifm-color-primary-lighter);
@@ -234,7 +244,7 @@ code {
 }
 .dt,
 .dt * {
-  color: var(--color-primary-dark) !important; /* Needed for both SSG and PDF Gen */
+  color: var(--color-accent) !important; /* Needed for both SSG and PDF Gen */
 }
 
 /* filepath_sysoutput_userinput_varname.css ==========================*/
@@ -255,7 +265,7 @@ code {
   color: var(--ifm-color-primary-darkest);
 }
 .fn::footnote-call {
-  color: var(--color-primary-dark);
+  color: var(--color-accent);
 }
 div.fn {
   border-top: 1px solid var(--ifm-color-primary-lighter);
@@ -267,7 +277,7 @@ div.fn {
   color: var(--ifm-color-primary);
 }
 .related-links::before{
-  color: var(--color-primary-dark);
+  color: var(--ifm-color-primary);
 }
 
 /* note.css ==========================================================*/
@@ -342,7 +352,7 @@ span.title,
 .table > caption > .title *,
 .table > caption > .title,
 .table--title-label {
-  color: var(--color-primary-dark);
+  color: var(--ifm-color-primary);
 }
 
 /* uicontrol_wintitle_shortcut_menucascade.css =======================*/
