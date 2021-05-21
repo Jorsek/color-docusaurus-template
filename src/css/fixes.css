@@ -1,0 +1,142 @@
+/* Remove navbar title on the right of the logo */
+strong.navbar__title {
+  display: none; /* uncomment once deployed to eD */
+  color: rgb(240,239,242);
+}
+
+/* Spacing between the top bar and heading fix */
+.markdown {
+  --ifm-h1-vertical-rhythm-top: 0; 
+}
+
+/* Hide empty elements. */
+div.markdown .prereq:empty,
+div.markdown .postreq:empty,
+div.markdown .steps:empty,
+div.markdown .steps-unordered:empty,
+div.markdown .stepsection:empty,
+div.markdown .cause:empty,
+div.markdown .condition:empty,
+div.markdown .context:empty,
+div.markdown .result:empty,
+div.markdown .example:empty,
+div.markdown .info:empty {
+  display: none;
+}
+
+/* Level2 lists should be lower-alpha */
+ol > li > ol {
+  list-style-type: lower-alpha;
+}
+
+/* Fix paragraphs placement in list items */
+.markdown li > p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* Hide menucascade symbols */
+abbr[title] {
+  display: none;
+  }
+  /* Apply custom menucascade symbols */
+  abbr + span.uicontrol::before {
+    /*content: " ⇨ ";*/
+    content: " → ";
+    display: inline;
+  }
+
+/* Fix the dotted border transition between elements. */
+.choices ~ .stepresult,
+.choices ~ .stepxmp,
+.info ~ .stepxmp,
+.info ~ .stepresult,
+.info ~ .substeps,
+.info ~ .info,
+.substeps ~ .info,
+.substeps ~ .stepresult,
+.choices ~ .stepresult,
+.substeps ~ .substeps {
+  margin-top: -3px;
+  padding-top: 3px;
+}
+.cmd ~ .info,
+.cmd ~ .stepresult,
+.cmd ~ .stepxmp,
+.cmd ~ .choices,
+.cmd ~ .substeps {
+  margin-top: -3.5px;
+  padding-top: 4px;
+}
+
+/* Fix issues with colors of note children */
+div.note,
+div.note * {
+  color: #f5f6f7;
+}
+
+/* Fix issues with background colors */
+div.note code.ph.codeph,
+div.note div.pre.codeblock {
+  color: #f5f6f7;
+  background-color: rgb(72, 77, 91);
+}
+
+table {
+  width: 100% !important;
+  display: block;
+}
+
+.linklist strong {
+  font-size: 20px;
+}
+
+nav.related-links {
+  padding-top: 15px !important;
+}
+
+/* Ensure that tables and choicetables span across the whole space available. */
+table {
+  width: 100%; /* 100% shows a vertical scrollbar on sites. */
+  margin: 5px 0px 5px 0px;
+  table-layout: auto;
+}
+
+/* Remove the table and choicetable borders completely. */
+table,
+table * {
+  border-collapse: collapse;
+  border: none !important; /* needed to overwrite the default site styling. */
+  text-align: left;
+}
+
+div.example {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* Style codeblocks similarly to Docusaurus */
+div.pre.codeblock {
+  -webkit-tap-highlight-color: transparent;
+  font: var(--ifm-font-size-base)/var(--ifm-line-height-base) var(--ifm-font-family-base);
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  font-family: var(--ifm-font-family-monospace);
+  border-radius: var(--ifm-alert-border-radius);
+  font-size: inherit;
+  line-height: var(--ifm-pre-line-height);
+  white-space: pre;
+  float: left;
+  min-width: 100%;
+  padding: var(--ifm-pre-padding);
+  margin-bottom: 1em;
+  color: rgb(191, 199, 213);
+  background-color: rgb(41, 45, 62);
+}
+
+div.markdown a {
+  text-decoration: underline;
+}

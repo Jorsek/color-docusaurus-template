@@ -1,0 +1,337 @@
+/* Variables */
+:root {
+  --color-primary: #1d3557;
+  --color-primary-dark: #1d3557;
+  --color-primary-light: #457b9d;
+  
+  --color-accent-a: #dcdcdc;
+  --color-accent-b: #242526;
+  --color-accent-c: #a8dadc;
+  --color-accent-d: #e63946;
+  --color-accent-e: #d95700;
+
+  --color-text-light: #f4f4f4;
+  --color-text-dark: #404040;
+}
+:root[data-theme='dark'] {
+  --color-primary: #1d3557;
+  --color-primary-dark: #446491;
+  --color-primary-light: #457b9d;
+  
+  --color-accent-a: #242526;
+  --color-accent-b: #dcdcdc;
+  --color-accent-c: #a8dadc;
+  --color-accent-d: #e63946;
+  --color-accent-e: #d95700;
+
+  --color-text-dark: #f4f4f4;
+  --color-text-light: #404040;
+}
+
+/* Navbar */
+:root #__docusaurus > nav.navbar,
+:root #__docusaurus > nav.navbar .navbar__title {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+}
+
+/* Left TOC */
+:root[data-theme='light'] #__docusaurus > div.main-wrapper div.menu {
+  background-color: var(--color-text-light);
+}
+
+/* Left TOC - Collapse button */
+:root[data-theme='light'] #__docusaurus > div.main-wrapper button {
+  background: var(--color-accent-a);
+  border-color: var(--color-accent-a);
+  color: #606770;
+}
+:root[data-theme='light'] #__docusaurus > div.main-wrapper button:hover {
+  background: var(--color-accent-a);
+  border-color: var(--color-accent-a);
+  color: #545454;
+}
+:root[data-theme='light'] #__docusaurus > div.main-wrapper button.button--sm:hover {
+  border-color: #545454;
+}
+
+/* Left TOC - Collapse button */
+:root[data-theme='dark'] #__docusaurus > div.main-wrapper button {
+  background: #242526;
+  border: none;
+  border-right: var(--ifm-button-border-width) solid #606770;
+}
+:root[data-theme='dark'] #__docusaurus > div.main-wrapper button:hover {
+  background: #606770;
+  border: none;
+  border-right: var(--ifm-button-border-width) solid #606770;
+}
+
+/* Footer */
+#__docusaurus > footer {
+  background-color: var(--color-primary);
+}
+
+/* Hovered collapse button */
+:root[data-theme='dark'] #__docusaurus > div.main-wrapper button.button--sm {
+  border: var(--ifm-button-border-width) solid #606770;
+  color: rgb(240,239,242);
+}
+:root[data-theme='dark'] #__docusaurus > div.main-wrapper button.button--sm:hover {
+  border: var(--ifm-button-border-width) solid #606770;
+  color: rgb(240,239,242);
+}
+
+/* faq_topic.css */
+article.topic.faq {
+  border-color: var(--color-primary-dark);
+}
+
+/*** typography.css ==================================================*/
+.markdown,
+.markdown * {
+  color: var(--color-text-dark);
+}
+
+/* cause_condition_context_example_postreq_prereq_remedy_result_steps_stepsection.css */
+.prereq::before,
+.postreq::before,
+.steps::before,
+.steps-unordered::before,
+.stepsection,
+.cause::before,
+.remedy::before,
+.condition::before,
+.context::before,
+.result::before,
+.example::before {
+  color: var(--color-primary-dark);
+}
+.cause > .title,
+.remedy > .title {
+  color: var(--color-text-dark);
+}
+.cause > .title::after,
+.remedy > .title::after {
+  color: var(--color-text-dark);
+}
+.stepsection > .ph,
+.stepsection > .ph *,
+.stepsection > .uicontrol,
+.stepsection > .wintitle,
+.stepsection > .codeph,
+.stepsection > .b,
+.stepsection > .i,
+.stepsection > .u,
+.stepsection > .term {
+  color: inherit;
+  background-color: transparent;
+}
+
+/* choices_info_stepresult_stepexample_solution_substeps_troublesolution.css */
+.stepresult,
+.info,
+.stepxmp,
+.troubleSolution,
+.choices,
+.substeps,
+.troubleSolution {
+  color: var(--color-text-dark);
+}
+.stepresult::before,
+.info::before,
+.stepxmp::before {
+  color: var(--color-text-dark);
+}
+
+/* choices_steps_substeps_numbering.css ==============================*/
+li.step::before,
+li.substep::before,
+li.choice::before {
+  background-color: var(--color-accent-a);
+  color: var(--color-text-dark);
+}
+.stepresult,
+.info,
+.stepxmp,
+.choices,
+.substeps {
+  border-color: var(--color-accent-a);
+}
+.cmd {
+  border-color: var(--color-accent-a);
+}
+
+/* choicetable_table.css =============================================*/
+tr,
+th,
+th * {
+  color: #f4f4f4 !important;
+  background-color: var(--color-primary) !important;
+}
+tr:nth-child(odd) > td {
+  background-color: #fff;
+}
+tr > td {
+  background-color: #f4f4f4;
+}
+
+tr > td.stentry,
+tr > td.stentry *,
+tr > td.entry,
+tr > td.entry * {
+  color: #404040 !important;
+}
+
+/* cite_long_quote_quote.css =========================================*/
+.cite {
+  color: var(--color-primary-dark);
+}
+.lq {
+  border-color: var(--color-accent-a);
+}
+
+/* codeblock_codeph.css ==============================================*/
+div.pre.codeblock,
+code {
+  background-color: var(--color-accent-a);
+  color: var(--color-text-dark);
+}
+
+/* definition_list.css ===============================================*/
+.dt,
+.dd {
+  border-color: var(--color-accent-a);
+}
+.dt,
+.dt * {
+  color: var(--color-primary-light);
+}
+
+/* filepath_sysoutput_userinput_varname.css ==========================*/
+.userinput,
+.userinput * {
+  color: var(--color-primary-light);
+}
+.systemoutput,
+.filepath,
+.sysoutput *,
+.filepath * {
+  color: var(--color-accent-e);
+}
+
+/* footnote.css =======================================================*/
+.fn,
+.fn * {
+  color: var(--color-text-dark);
+}
+.fn::footnote-call {
+  color: var(--color-primary-light);
+}
+div.fn {
+  border-top: 1px solid var(--color-accent-a);
+}
+
+/* xref_related_links.css ============================================*/
+.xref,
+.link {
+  color: var(--color-primary-light);
+}
+.related-links::before{
+  color: var(--color-primary-dark);
+}
+
+/* note.css ==========================================================*/
+.note {
+  border-color: var(--ifm-color-primary-darkest);
+  background-color: var(--ifm-color-primary-lighter);
+  color: var(--ifm-color-primary-darkest);
+}
+
+.markdown .note {
+  color: var(--color-text-dark);
+}
+
+.note_note,
+.note_trouble {
+  border-color: var(--color-primary-light);
+  background-color: #29b4d328;
+}
+.note_note > .note__title,
+.note_trouble > .note__title {
+  color: var(--color-primary-light);
+}
+.note_tip,
+.note_fastpath {
+  border-color: #3f6c51;
+  background-color: #3f6c512c;
+}
+.note_tip > .note__title,
+.note_fastpath > .note__title {
+  color: #3f6c51;
+}
+.note_important,
+.note_remember,
+.note_restriction {
+  border-color: #ffa600;
+  background-color: #ffc25131;
+}
+.note_important > .note__title,
+.note_remember > .note__title,
+.note_restriction > .note__title {
+  color: #ffa600;
+}
+.note_attention,
+.note_caution,
+.note_warning,
+.note_danger {
+  border-color: #d95700;
+  background-color: #d9570027;
+}
+.note_attention > .note__title,
+.note_caution > .note__title,
+.note_warning > .note__title,
+.note_danger > .note__title {
+  color: #d95700;
+}
+
+/* title-site.css ====================================================*/
+h1,
+h1 *,
+h2,
+h2 *,
+h3,
+h3 *,
+h4,
+h4 *,
+h5,
+h5 *,
+h6,
+h6 *,
+figcaption,
+.fig--title-label,
+span.table--title-label,
+span.title,
+.table--title-label,
+.table--title-label *,
+.table > caption > .title,
+.table > caption > .title *,
+.table > caption > .title,
+.table--title-label {
+  color: var(--color-primary-dark) !important;
+}
+
+/* uicontrol_wintitle_shortcut_menucascade.css =======================*/
+.uicontrol {
+  color: var(--color-primary-light);
+}
+.shortcut {
+  color: var(--color-primary-light);
+}
+abbr[title] {
+  color: var(--color-primary-light);
+}
+
+.linklist strong {
+  color: var(--color-primary-dark);
+}
