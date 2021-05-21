@@ -2,10 +2,9 @@
 
 /* Primary, left TOC inactive links */
 :root {
-  --ifm-color-primary: #457b9d;
+  --ifm-color-primary: #1d3557;
   --color-accent: #1d3557;
 
-  
   --ifm-color-primary-light: #f4f4f4;;
   --ifm-color-primary-lighter: #dcdcdc;
   
@@ -14,7 +13,7 @@
 }
 
 :root[data-theme='dark'] {
-  --ifm-color-primary: #457b9d;
+  --ifm-color-primary: #a8dadc;
   --color-accent: #1d3557;
   
   --ifm-color-primary-light: #404040;;
