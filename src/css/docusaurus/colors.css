@@ -335,3 +335,7 @@ abbr[title] {
 .linklist strong {
   color: var(--color-primary-dark);
 }
+
+#__docusaurus > nav.navbar.navbar--fixed-top > div.navbar__inner > div:nth-child(1) > a > strong {
+  color: #f4f4f4;
+}
