@@ -81,3 +81,31 @@ div.note div.pre.codeblock {
   color: #f5f6f7;
   background-color: rgb(72, 77, 91);
 }
+
+table {
+  width: 100% !important;
+  display: block;
+}
+
+.linklist strong {
+  font-size: 20px;
+}
+
+nav.related-links {
+  padding-top: 15px !important;
+}
+
+/* Ensure that tables and choicetables span across the whole space available. */
+table {
+  width: 100%; /* 100% shows a vertical scrollbar on sites. */
+  margin: 5px 0px 5px 0px;
+  table-layout: auto;
+}
+
+/* Remove the table and choicetable borders completely. */
+table,
+table * {
+  border-collapse: collapse;
+  border: none !important; /* needed to overwrite the default site styling. */
+  text-align: left;
+}

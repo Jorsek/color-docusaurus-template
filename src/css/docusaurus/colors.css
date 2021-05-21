@@ -4,18 +4,20 @@
 :root {
   --ifm-color-primary: #457b9d;
   --color-accent: #1d3557;
+
   
   --ifm-color-primary-light: #f4f4f4;;
   --ifm-color-primary-lighter: #dcdcdc;
   
   --ifm-color-primary-darkest: #404040;
+
 }
 
 :root[data-theme='dark'] {
   --ifm-color-primary: #457b9d;
   --color-accent: #1d3557;
   
-  --ifm-color-primary-light: #f4f4f4;;
+  --ifm-color-primary-light: #404040;;
   --ifm-color-primary-darkest: #dcdcdc;
   
   --ifm-color-primary-lighter: #404040;
@@ -61,6 +63,11 @@
   border-right: var(--ifm-button-border-width) solid #606770;
 }
 
+/* Footer */
+#__docusaurus > footer {
+  background-color: var(--color-accent);
+}
+
 /* Hovered collapse button */
 :root[data-theme='dark'] #__docusaurus > div.main-wrapper button.button--sm {
   border: var(--ifm-button-border-width) solid #606770;
@@ -95,31 +102,9 @@ article a[href]::after {
   color: var(--ifm-color-primary-darkest);
 }
 
-/* table_of_contents.css ===============================================*/
-nav > ul:first-child::before {
-  color: var(--color-accent);
-}
-nav * {
-  color: var(--ifm-color-primary-darkest);
-}
-nav > ul:has(ul) > li > a {
-  color: var(--color-accent);
-}
-nav > ul:has(ul) > li,
-nav > ul:has(ul) > li:before {
-  color: var(--color-accent);
-}
-nav > ul:has(ul) > li > a::after {
-  color: var(--color-accent);
-}
-nav > ul > li > a,
-nav > ul > li:before {
-  color: var(--ifm-color-primary-darkest);
-}
-
 /*** typography.css ==================================================*/
-div.markdown,
-div.markdown * {
+.markdown,
+.markdown * {
   color: var(--ifm-color-primary-darkest);
 }
 
@@ -203,8 +188,8 @@ table {
 tr,
 th,
 th * {
-  color: #fff !important; /* Needed for both SSG and PDF Gen */
-  background-color: var(--color-accent);
+  color: #f4f4f4 !important;
+  background-color: var(--color-accent) !important;
 }
 th,
 th *,
@@ -216,9 +201,15 @@ tr:nth-child(odd) > td {
   background-color: #fff;
 }
 tr > td {
-  background-color: var(--ifm-color-primary-light);
+  background-color: #f4f4f4;
 }
 
+tr > td.stentry,
+tr > td.stentry *,
+tr > td.entry,
+tr > td.entry * {
+  color: #404040 !important;
+}
 
 /* cite_long_quote_quote.css =========================================*/
 .cite {
@@ -244,7 +235,7 @@ code {
 }
 .dt,
 .dt * {
-  color: var(--color-accent) !important; /* Needed for both SSG and PDF Gen */
+  color: var(--ifm-color-primary) !important; /* Needed for both SSG and PDF Gen */
 }
 
 /* filepath_sysoutput_userinput_varname.css ==========================*/
@@ -286,6 +277,11 @@ div.fn {
   background-color: var(--ifm-color-primary-lighter);
   color: var(--ifm-color-primary-darkest);
 }
+
+.markdown .note {
+  color: var(--ifm-color-primary-darkest);
+}
+
 .note_note,
 .note_trouble {
   border-color: var(--ifm-color-primary);
@@ -352,7 +348,7 @@ span.title,
 .table > caption > .title *,
 .table > caption > .title,
 .table--title-label {
-  color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary) !important;
 }
 
 /* uicontrol_wintitle_shortcut_menucascade.css =======================*/
@@ -363,5 +359,9 @@ span.title,
   color: var(--ifm-color-primary);
 }
 abbr[title] {
+  color: var(--ifm-color-primary);
+}
+
+.linklist strong {
   color: var(--ifm-color-primary);
 }

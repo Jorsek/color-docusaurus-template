@@ -10,8 +10,6 @@
 
 /*STYLING ============================================================================*/
 @import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/styling/typography.css");
-@import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/styling/figure_no_numbering.css");
-@import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/styling/table_no_numbering.css");
 @import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/styling/image_borders.css");
 @import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/styling/formatting.css");
 
@@ -34,7 +32,6 @@
 @import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/dita/cause_condition_context_example_postreq_prereq_remedy_result_steps_stepsection.css");
 @import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/dita/choices_info_stepresult_stepexample_solution_substeps_troublesolution.css");
 @import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/dita/choices_steps_substeps_numbering.css");
-@import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/dita/choicetable_table.css");
 
 /* Docusaurus */
 @import "docusaurus/right_toc.css";
@@ -42,5 +39,4 @@
 @import "docusaurus/colors.css";
 
 /* Fixes */
-
 @import "fixes.css";
