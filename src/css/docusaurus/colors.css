@@ -1,55 +1,59 @@
-/*** LIGHT ***/
-
-/* Primary, left TOC inactive links */
 :root {
-  --ifm-color-primary: #457b9d;
-  --color-accent: #1d3557;
-
-  --ifm-color-primary-light: #f4f4f4;;
-  --ifm-color-primary-lighter: #dcdcdc;
+  --color-primary: #1d3557;
+  --color-primary-dark: #1d3557;
+  --color-primary-light: #457b9d;
   
-  --ifm-color-primary-darkest: #404040;
+  --color-accent-a: #dcdcdc;
+  --color-accent-b: #242526;
+  --color-accent-c: #a8dadc;
+  --color-accent-d: #e63946;
+  --color-accent-e: #d95700;
 
+  --color-text-light: #f4f4f4;
+  --color-text-dark: #404040;
 }
-
 :root[data-theme='dark'] {
-  --ifm-color-primary: #457b9d;
-  --color-accent: #1d3557;
+  --color-primary: #1d3557;
+  --color-primary-dark: #1d3557;
+  --color-primary-light: #457b9d;
   
-  --ifm-color-primary-light: #404040;;
-  --ifm-color-primary-darkest: #dcdcdc;
-  
-  --ifm-color-primary-lighter: #404040;
+  --color-accent-a: #242526;
+  --color-accent-b: #dcdcdc;
+  --color-accent-c: #a8dadc;
+  --color-accent-d: #e63946;
+  --color-accent-e: #d95700;
+
+  --color-text-dark: #f4f4f4;
+  --color-text-light: #404040;
 }
 
 /* Navbar */
 :root #__docusaurus > nav.navbar,
 :root #__docusaurus > nav.navbar .navbar__title {
-  background-color: var(--color-accent);
-  color: var(--ifm-color-primary-light);
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
 }
 
 /* Left TOC */
 :root[data-theme='light'] #__docusaurus > div.main-wrapper div.menu {
-  background-color: var(--ifm-color-primary-light);
+  background-color: var(--color-text-light);
 }
 
 /* Left TOC - Collapse button */
 :root[data-theme='light'] #__docusaurus > div.main-wrapper button {
-  background: var(--ifm-color-primary-lighter);
-  border-color: var(--ifm-color-primary-lighter);
+  background: var(--color-accent-a);
+  border-color: var(--color-accent-a);
   color: #606770;
 }
 :root[data-theme='light'] #__docusaurus > div.main-wrapper button:hover {
-  background: var(--ifm-color-primary-light);
-  border-color: var(--ifm-color-primary-light);
+  background: var(--color-accent-a);
+  border-color: var(--color-accent-a);
   color: #545454;
 }
 :root[data-theme='light'] #__docusaurus > div.main-wrapper button.button--sm:hover {
   border-color: #545454;
 }
 
-/* Left TOC */
 /* Left TOC - Collapse button */
 :root[data-theme='dark'] #__docusaurus > div.main-wrapper button {
   background: #242526;
@@ -64,7 +68,7 @@
 
 /* Footer */
 #__docusaurus > footer {
-  background-color: var(--color-accent);
+  background-color: var(--color-primary);
 }
 
 /* Hovered collapse button */
@@ -77,39 +81,16 @@
   color: rgb(240,239,242);
 }
 
-/*=====================================================================
-                                LAYOUT 
-======================================================================*/
-
 /* faq_topic.css */
 article.topic.faq {
-  border-color: var(--ifm-color-primary);
-}
-
-/*=====================================================================
-                                STYLING 
-======================================================================*/
-
-/* image_borders.css ===================================================*/
-.image,
-.body img {
-  border-color: var(--ifm-color-primary-light);
-}
-
-/* link_page_number.css ===================================================*/
-article a[href]::after {
-  color: var(--ifm-color-primary-darkest);
+  border-color: var(--color-primary-dark);
 }
 
 /*** typography.css ==================================================*/
 .markdown,
 .markdown * {
-  color: var(--ifm-color-primary-darkest);
+  color: var(--color-text-dark);
 }
-
-/*=====================================================================
-                                DITA 
-======================================================================*/
 
 /* cause_condition_context_example_postreq_prereq_remedy_result_steps_stepsection.css */
 .prereq::before,
@@ -123,15 +104,15 @@ article a[href]::after {
 .context::before,
 .result::before,
 .example::before {
-  color: var(--color-accent);
+  color: var(--color-primary-dark);
 }
 .cause > .title,
 .remedy > .title {
-  color: var(--ifm-color-primary-darkest);
+  color: var(--color-text-dark);
 }
 .cause > .title::after,
 .remedy > .title::after {
-  color: var(--ifm-color-primary-darkest);
+  color: var(--color-text-dark);
 }
 .stepsection > .ph,
 .stepsection > .ph *,
@@ -154,47 +135,38 @@ article a[href]::after {
 .choices,
 .substeps,
 .troubleSolution {
-  border-color: var(--ifm-color-primary-lighter);
+  color: var(--color-text-dark);
 }
 .stepresult::before,
 .info::before,
 .stepxmp::before {
-  color: var(--ifm-color-primary-darkest);
+  color: var(--color-text-dark);
 }
 
 /* choices_steps_substeps_numbering.css ==============================*/
 li.step::before,
 li.substep::before,
 li.choice::before {
-  background-color: var(--ifm-color-primary-lighter);
-  color: var(--ifm-color-primary-darkest);
+  background-color: var(--color-accent-a);
+  color: var(--color-text-dark);
 }
 .stepresult,
 .info,
 .stepxmp,
 .choices,
 .substeps {
-  border-color: var(--ifm-color-primary-lighter);
+  border-color: var(--color-accent-a);
 }
 .cmd {
-  border-color: var(--ifm-color-primary-lighter);
+  border-color: var(--color-accent-a);
 }
 
 /* choicetable_table.css =============================================*/
-table {
-  border-color: var(--color-accent) !important; /* Needed for SSG */
-}
 tr,
 th,
 th * {
   color: #f4f4f4 !important;
-  background-color: var(--color-accent) !important;
-}
-th,
-th *,
-th > .fn::footnote-call {
-  color: #fff;
-  background-color: var(--color-accent);
+  background-color: var(--color-primary-dark) !important;
 }
 tr:nth-child(odd) > td {
   background-color: #fff;
@@ -202,7 +174,6 @@ tr:nth-child(odd) > td {
 tr > td {
   background-color: #f4f4f4;
 }
-
 tr > td.stentry,
 tr > td.stentry *,
 tr > td.entry,
@@ -212,62 +183,60 @@ tr > td.entry * {
 
 /* cite_long_quote_quote.css =========================================*/
 .cite {
-  color: var(--color-accent);
+  color: var(--color-primary-dark);
 }
 .lq {
-  border-color: var(--ifm-color-primary-lighter);
+  border-color: var(--color-accent-a);
 }
 
 /* codeblock_codeph.css ==============================================*/
+div.pre.codeblock,
 code {
-  color: var(--ifm-color-primary-darkest);
-  background-color: var(--ifm-color-primary-light);
-}
-.codeblock > code {
-  border-color: var(--ifm-color-primary-lighter);
+  background-color: var(--color-accent-a);
+  color: var(--color-text-dark);
 }
 
 /* definition_list.css ===============================================*/
 .dt,
 .dd {
-  border-color: var(--ifm-color-primary-lighter);
+  border-color: var(--color-accent-a);
 }
 .dt,
 .dt * {
-  color: var(--color-accent) !important; /* Needed for both SSG and PDF Gen */
+  color: var(--color-primary-light);
 }
 
 /* filepath_sysoutput_userinput_varname.css ==========================*/
 .userinput,
 .userinput * {
-  color: var(--ifm-color-primary);
+  color: var(--color-primary-light);
 }
 .systemoutput,
 .filepath,
 .sysoutput *,
 .filepath * {
-  color: #d95700;
+  color: var(--color-accent-e);
 }
 
 /* footnote.css =======================================================*/
 .fn,
 .fn * {
-  color: var(--ifm-color-primary-darkest);
+  color: var(--color-text-dark);
 }
 .fn::footnote-call {
-  color: var(--color-accent);
+  color: var(--color-primary-light);
 }
 div.fn {
-  border-top: 1px solid var(--ifm-color-primary-lighter);
+  border-top: 1px solid var(--color-accent-a);
 }
 
 /* xref_related_links.css ============================================*/
 .xref,
 .link {
-  color: var(--ifm-color-primary);
+  color: var(--color-primary-light);
 }
 .related-links::before{
-  color: var(--ifm-color-primary);
+  color: var(--color-primary-dark);
 }
 
 /* note.css ==========================================================*/
@@ -278,17 +247,17 @@ div.fn {
 }
 
 .markdown .note {
-  color: var(--ifm-color-primary-darkest);
+  color: var(--color-text-dark);
 }
 
 .note_note,
 .note_trouble {
-  border-color: var(--ifm-color-primary);
+  border-color: var(--color-primary-light);
   background-color: #29b4d328;
 }
 .note_note > .note__title,
 .note_trouble > .note__title {
-  color: var(--ifm-color-primary);
+  color: var(--color-primary-light);
 }
 .note_tip,
 .note_fastpath {
@@ -347,20 +316,20 @@ span.title,
 .table > caption > .title *,
 .table > caption > .title,
 .table--title-label {
-  color: var(--color-accent) !important;
+  color: var(--color-primary-dark) !important;
 }
 
 /* uicontrol_wintitle_shortcut_menucascade.css =======================*/
 .uicontrol {
-  color: var(--ifm-color-primary);
+  color: var(--color-primary-light);
 }
 .shortcut {
-  color: var(--ifm-color-primary);
+  color: var(--color-primary-light);
 }
 abbr[title] {
-  color: var(--ifm-color-primary);
+  color: var(--color-primary-light);
 }
 
 .linklist strong {
-  color: var(--color-accent);
+  color: var(--color-primary-dark);
 }

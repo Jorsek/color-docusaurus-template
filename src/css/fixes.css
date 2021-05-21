@@ -109,3 +109,34 @@ table * {
   border: none !important; /* needed to overwrite the default site styling. */
   text-align: left;
 }
+
+div.example {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* Style codeblocks similarly to Docusaurus */
+div.pre.codeblock {
+  -webkit-tap-highlight-color: transparent;
+  font: var(--ifm-font-size-base)/var(--ifm-line-height-base) var(--ifm-font-family-base);
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  word-wrap: break-word;
+  box-sizing: border-box;
+  font-family: var(--ifm-font-family-monospace);
+  border-radius: var(--ifm-alert-border-radius);
+  font-size: inherit;
+  line-height: var(--ifm-pre-line-height);
+  white-space: pre;
+  float: left;
+  min-width: 100%;
+  padding: var(--ifm-pre-padding);
+  margin-bottom: 1em;
+  color: rgb(191, 199, 213);
+  background-color: rgb(41, 45, 62);
+}
+
+div.markdown a {
+  text-decoration: underline;
+}

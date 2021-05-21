@@ -10,7 +10,6 @@
 
 /*STYLING ============================================================================*/
 @import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/styling/typography.css");
-@import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/styling/image_borders.css");
 @import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/styling/formatting.css");
 
 /* DITA ==============================================================================*/
@@ -34,9 +33,7 @@
 @import url("https://jorsek.github.io/pdfgen.github.io/styles1.1/modules/dita/choices_steps_substeps_numbering.css");
 
 /* Docusaurus */
+@import "fixes.css";
 @import "docusaurus/right_toc.css";
 @import "docusaurus/navbar.css";
 @import "docusaurus/colors.css";
-
-/* Fixes */
-@import "fixes.css";
