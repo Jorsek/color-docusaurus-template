@@ -121,3 +121,15 @@ div.pre.codeblock {
 div.markdown a {
   text-decoration: underline;
 }
+
+span.desc.figdesc {
+  font-weight: normal;
+}
+
+ul.linklist {
+  padding-left: 0;
+}
+
+li.li.choice > p.p {
+  margin-left: 0;
+}
