@@ -1,3 +1,4 @@
+/* Variables */
 :root {
   --color-primary: #1d3557;
   --color-primary-dark: #1d3557;
@@ -14,7 +15,7 @@
 }
 :root[data-theme='dark'] {
   --color-primary: #1d3557;
-  --color-primary-dark: #1d3557;
+  --color-primary-dark: #446491;
   --color-primary-light: #457b9d;
   
   --color-accent-a: #242526;
@@ -166,7 +167,7 @@ tr,
 th,
 th * {
   color: #f4f4f4 !important;
-  background-color: var(--color-primary-dark) !important;
+  background-color: var(--color-primary) !important;
 }
 tr:nth-child(odd) > td {
   background-color: #fff;
@@ -174,6 +175,7 @@ tr:nth-child(odd) > td {
 tr > td {
   background-color: #f4f4f4;
 }
+
 tr > td.stentry,
 tr > td.stentry *,
 tr > td.entry,
