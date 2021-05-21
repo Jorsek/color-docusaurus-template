@@ -2,7 +2,7 @@
 
 /* Primary, left TOC inactive links */
 :root {
-  --ifm-color-primary: #1d3557;
+  --ifm-color-primary: #457b9d;
   --color-accent: #1d3557;
 
   --ifm-color-primary-light: #f4f4f4;;
@@ -13,7 +13,7 @@
 }
 
 :root[data-theme='dark'] {
-  --ifm-color-primary: #a8dadc;
+  --ifm-color-primary: #457b9d;
   --color-accent: #1d3557;
   
   --ifm-color-primary-light: #404040;;
@@ -123,7 +123,7 @@ article a[href]::after {
 .context::before,
 .result::before,
 .example::before {
-  color: var(--ifm-color-primary);
+  color: var(--color-accent);
 }
 .cause > .title,
 .remedy > .title {
@@ -234,7 +234,7 @@ code {
 }
 .dt,
 .dt * {
-  color: var(--ifm-color-primary) !important; /* Needed for both SSG and PDF Gen */
+  color: var(--color-accent) !important; /* Needed for both SSG and PDF Gen */
 }
 
 /* filepath_sysoutput_userinput_varname.css ==========================*/
@@ -347,7 +347,7 @@ span.title,
 .table > caption > .title *,
 .table > caption > .title,
 .table--title-label {
-  color: var(--ifm-color-primary) !important;
+  color: var(--color-accent) !important;
 }
 
 /* uicontrol_wintitle_shortcut_menucascade.css =======================*/
@@ -362,5 +362,5 @@ abbr[title] {
 }
 
 .linklist strong {
-  color: var(--ifm-color-primary);
+  color: var(--color-accent);
 }
